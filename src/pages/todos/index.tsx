@@ -1,15 +1,18 @@
 import { useEffect } from 'react';
 import { useLoaderData, NavLink, useSearchParams } from 'react-router-dom';
+import {  todoListQuery } from './index.loader';
+import { useQuery } from '@tanstack/react-query';
+
 
 const Page = () => {
-  const data = useLoaderData();
+  // const data = useLoaderData();
+  const { data } = useQuery(todoListQuery());
 
   return (
     <div>
       <h1>Todo Items</h1>
       <ul>
-        {/* @ts-ignore */}
-        {data.map((todo) => (
+        {data?.map((todo) => (
           <li key={todo.id}>
             <NavLink
               to={`${todo.id}`}

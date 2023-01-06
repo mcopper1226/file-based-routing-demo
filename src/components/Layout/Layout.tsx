@@ -1,12 +1,12 @@
 import { NavLink, Outlet, useNavigation } from 'react-router-dom';
-import '../../style.scss';
-import s from './Layout.module.scss';
+import '../../style.css';
+// import s from './Layout.module.scss';
 
 const Layout = () => {
   const navigation = useNavigation();
   return (
     <>
-      <div className={s.sidebar}>
+      <div className='test'>
         <h1>File-Based Routing Example</h1>
         <nav>
           <ul>

@@ -1,6 +1,6 @@
 export const userListQuery = () => ({
-  queryKey: ['todos'],
-  queryFn: async (): Promise<UserData[] | string> => {
+  queryKey: ['users'],
+  queryFn: async (): Promise<UserData[]> => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
     return res.json();
   }
