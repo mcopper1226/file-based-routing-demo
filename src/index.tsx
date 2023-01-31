@@ -1,55 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '@cloudscape-design/global-styles/index.css';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Layout from './components/Layout';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { ModalProvider } from './context/ModalContext';
+import builtRoutes from './lib/routes';
+
 const queryClient = new QueryClient();
 
-const routesCtx = require.context('./pages', true, /.tsx$/, 'lazy');
-
-let loaderCache: Record<string, any> = {};
-const loaders = require.context('./pages', true, /loader.ts$/);
-loaders.keys().forEach((key) => {
-  loaderCache[key.replace(/\/([A-Za-z0-9])\w+\.loader\.ts$/g, '/index.tsx')] =
-    loaders(key);
-});
-
-const routes = routesCtx.keys().map((route) => {
-  // @TODO: Investigate what type we're actually dealing with [lines 13 and 17.]
-  // @ts-ignore
-  const loader = loaderCache[route]?.default;
-  const path = route
-    .replace(/\/src\/pages|index|\.tsx$/g, '')
-    .replace(/^./g, '')
-    .replace(/\[\.{3}.+\]/, '*')
-    .replace(/\[(.+)\]/, ':$1');
-
-  const Component = React.lazy(
-    () => import(`./pages/${route.replace('./', '')}`)
-  );
-
-  console.log(typeof loader);
-
-  return {
-    path,
-    id: path,
-    element: (
-      <React.Suspense>
-        <Component />
-      </React.Suspense>
-    ),
-    loader: loader && loader(queryClient)
-  };
-});
-
+// @TODO: convert to hashRouter
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     errorElement: '<div>Error</div>',
-    children: routes
+    children: builtRoutes.map(({ path, loader, Component }) => ({
+      path: path,
+      id: path,
+      element: (
+        <React.Suspense>
+          <Component />
+        </React.Suspense>
+      ),
+      loader: loader && loader(queryClient)
+    }))
   }
 ]);
 
@@ -59,7 +36,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
+      <ModalProvider>
+        <RouterProvider router={router} />
+      </ModalProvider>
     </QueryClientProvider>
   </React.StrictMode>
 );

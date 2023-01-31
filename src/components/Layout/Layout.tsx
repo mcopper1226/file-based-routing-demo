@@ -1,30 +1,29 @@
 import { NavLink, Outlet, useNavigation } from 'react-router-dom';
 import '../../style.css';
-// import s from './Layout.module.scss';
+import { AppLayout, Modal } from '@cloudscape-design/components';
+import Navigation from '../Navigation';
+import PageWrapper from '../PageWrapper';
+import { Notifications } from '../Notifications/Notification';
+import { useModal } from '../../context/ModalContext';
+import styles from './layout.module.css';
 
 const Layout = () => {
   const navigation = useNavigation();
+  const { modal } = useModal();
   return (
     <>
-      <div className='test'>
-        <h1>File-Based Routing Example</h1>
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="todos">Todo List</NavLink>
-            </li>
-            <li>
-              <NavLink to="users">User List</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div
-        id="detail"
-        className={navigation.state === 'loading' ? 'loading' : ''}
-      >
-        <Outlet />
-      </div>
+      <AppLayout
+        navigation={<Navigation />}
+        notifications={<Notifications successNotification />}
+        content={
+          <div className={navigation.state === 'loading' ? styles.loading : ''}>
+            <PageWrapper>
+              <Outlet />
+            </PageWrapper>
+          </div>
+        }
+      />
+      {modal && <Modal {...modal} />}
     </>
   );
 };

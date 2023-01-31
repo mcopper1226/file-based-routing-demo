@@ -1,0 +1,1592 @@
+{
+  "$metadata": {},
+  "DistributionList": {
+    "Items": [
+      {
+        "Id": "E2C2HKGO56HIER",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E2C2HKGO56HIER",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-24T22:17:50.663Z",
+        "DomainName": "dyodo2c2iwogb.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": "E1M7Q36K1835H8"
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "LambdaFunctionARN": "arn:aws:lambda:us-east-1:837085683992:function:test_lambda_fn_2:2",
+                "EventType": "origin-request",
+                "IncludeBody": true
+              }
+            ]
+          },
+          "FunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "FunctionARN": "arn:aws:cloudfront::837085683992:function/demo-fn-2",
+                "EventType": "viewer-request"
+              }
+            ]
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E3TIGHYZF80ZV7",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E3TIGHYZF80ZV7",
+        "Status": "Deployed",
+        "LastModifiedTime": "2022-12-30T12:37:37.639Z",
+        "DomainName": "d3qj970igutuc5.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": "E1C3VFP3INTR2T"
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "EM4PM434YQO17",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/EM4PM434YQO17",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-23T13:44:43.534Z",
+        "DomainName": "d2yxrlbqryehnq.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 2,
+          "Items": [
+            {
+              "Id": "mc-demo-website.s3-website-us-east-1.amazonaws.com",
+              "DomainName": "mc-demo-website.s3-website-us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "CustomOriginConfig": {
+                "HTTPPort": 80,
+                "HTTPSPort": 443,
+                "OriginProtocolPolicy": "https-only",
+                "OriginSslProtocols": {
+                  "Quantity": 1,
+                  "Items": ["TLSv1.2"]
+                },
+                "OriginReadTimeout": 30,
+                "OriginKeepaliveTimeout": 5
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            },
+            {
+              "Id": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "test-origin-group",
+              "FailoverCriteria": {
+                "StatusCodes": {
+                  "Quantity": 1,
+                  "Items": [502]
+                }
+              },
+              "Members": {
+                "Quantity": 2,
+                "Items": [
+                  {
+                    "OriginId": "mc-demo-website.s3-website-us-east-1.amazonaws.com"
+                  },
+                  {
+                    "OriginId": "mcopper-demo-4.s3.us-east-1.amazonaws.com"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "LambdaFunctionARN": "arn:aws:lambda:us-east-1:837085683992:function:test_lambda_fn_2:2",
+                "EventType": "origin-request",
+                "IncludeBody": true
+              }
+            ]
+          },
+          "FunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "FunctionARN": "arn:aws:cloudfront::837085683992:function/demo-fn-2",
+                "EventType": "viewer-request"
+              }
+            ]
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "ErrorCode": 502,
+              "ResponsePagePath": "",
+              "ResponseCode": "",
+              "ErrorCachingMinTTL": 10
+            }
+          ]
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "whitelist",
+            "Quantity": 1,
+            "Items": ["US"]
+          }
+        },
+        "WebACLId": "arn:aws:wafv2:us-east-1:837085683992:global/webacl/mcopper-demo-web-acl-1/e5eee0f2-187f-4725-af5c-83a3c69dd4e9",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E9P1D4CDD6UXP",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E9P1D4CDD6UXP",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-24T21:32:59.673Z",
+        "DomainName": "d1t1t02aq6zarz.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 2,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            },
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com-new",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "FunctionARN": "arn:aws:cloudfront::837085683992:function/demo-fn-2",
+                "EventType": "viewer-request"
+              }
+            ]
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "2e54312d-136d-493c-8eb9-b001f22f67d2"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "ErrorCode": 403,
+              "ResponsePagePath": "",
+              "ResponseCode": "",
+              "ErrorCachingMinTTL": 10
+            }
+          ]
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E3JMHUWXFLZ342",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E3JMHUWXFLZ342",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-18T22:02:43.295Z",
+        "DomainName": "d6rqbsr00w8sk.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "LambdaFunctionARN": "arn:aws:lambda:us-east-1:837085683992:function:test_lambda_fn_2:2",
+                "EventType": "origin-request",
+                "IncludeBody": true
+              }
+            ]
+          },
+          "FunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "FunctionARN": "arn:aws:cloudfront::837085683992:function/demo-fn-2",
+                "EventType": "viewer-request"
+              }
+            ]
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": true
+      },
+      {
+        "Id": "ET0TU5GBUUWBU",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/ET0TU5GBUUWBU",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-19T21:09:18.513Z",
+        "DomainName": "d3owy45g1spttw.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "LambdaFunctionARN": "arn:aws:lambda:us-east-1:837085683992:function:test_lambda_fn_2:2",
+                "EventType": "origin-request",
+                "IncludeBody": true
+              }
+            ]
+          },
+          "FunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "FunctionARN": "arn:aws:cloudfront::837085683992:function/demo-fn-2",
+                "EventType": "viewer-request"
+              }
+            ]
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": false,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": true
+      },
+      {
+        "Id": "E3JP7IMD8DXGBD",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E3JP7IMD8DXGBD",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-19T21:14:06.790Z",
+        "DomainName": "dbfmn6507i6c1.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 1,
+            "Items": [
+              {
+                "FunctionARN": "arn:aws:cloudfront::837085683992:function/demo-fn-2",
+                "EventType": "viewer-request"
+              }
+            ]
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": true
+      },
+      {
+        "Id": "ERFW91SADESTD",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/ERFW91SADESTD",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-23T14:22:38.260Z",
+        "DomainName": "d3vp4lalqbur2y.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": false,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "arn:aws:wafv2:us-east-1:837085683992:global/webacl/mcopper-demo-web-acl-1/e5eee0f2-187f-4725-af5c-83a3c69dd4e9",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E35QAY38FYWKK2",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E35QAY38FYWKK2",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-23T14:22:38.247Z",
+        "DomainName": "d3lv62ul44dghx.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": false,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "arn:aws:wafv2:us-east-1:837085683992:global/webacl/mcopper-demo-web-acl-1/e5eee0f2-187f-4725-af5c-83a3c69dd4e9",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E3TF5DC28GPE7V",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E3TF5DC28GPE7V",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-23T14:22:38.339Z",
+        "DomainName": "d2fijuyfvmedrt.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": false,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "arn:aws:wafv2:us-east-1:837085683992:global/webacl/mcopper-demo-web-acl-1/e5eee0f2-187f-4725-af5c-83a3c69dd4e9",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "EKNBKXXGWFSEV",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/EKNBKXXGWFSEV",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-23T14:22:04.522Z",
+        "DomainName": "d2duzllxvaqo2.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "arn:aws:wafv2:us-east-1:837085683992:global/webacl/mcopper-demo-web-acl-1/e5eee0f2-187f-4725-af5c-83a3c69dd4e9",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E3NEJVHCVOGS40",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E3NEJVHCVOGS40",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-23T14:23:16.946Z",
+        "DomainName": "d31nq6nf8hfe0n.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-4.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "arn:aws:wafv2:us-east-1:837085683992:global/webacl/mcopper-demo-web-acl-1/e5eee0f2-187f-4725-af5c-83a3c69dd4e9",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E3W3TXCNMM9OBF",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E3W3TXCNMM9OBF",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-27T19:16:00.926Z",
+        "DomainName": "dbqzlhqzu4wlp.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-1.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": false,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E33JULKS3SXIZB",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E33JULKS3SXIZB",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-27T19:16:51.141Z",
+        "DomainName": "d1k0m0q7l61be1.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": false
+      },
+      {
+        "Id": "E1J4R61D4092MQ",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E1J4R61D4092MQ",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-27T20:27:50.715Z",
+        "DomainName": "d1cs2bw9omx2hm.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": true,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": true
+      },
+      {
+        "Id": "E3KP9WJ5YXS02K",
+        "ARN": "arn:aws:cloudfront::837085683992:distribution/E3KP9WJ5YXS02K",
+        "Status": "Deployed",
+        "LastModifiedTime": "2023-01-27T22:24:50.275Z",
+        "DomainName": "d12iq629b4gnuw.cloudfront.net",
+        "Aliases": {
+          "Quantity": 0
+        },
+        "Origins": {
+          "Quantity": 1,
+          "Items": [
+            {
+              "Id": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "DomainName": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+              "OriginPath": "",
+              "CustomHeaders": {
+                "Quantity": 0
+              },
+              "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+              },
+              "ConnectionAttempts": 3,
+              "ConnectionTimeout": 10,
+              "OriginShield": {
+                "Enabled": false
+              },
+              "OriginAccessControlId": ""
+            }
+          ]
+        },
+        "OriginGroups": {
+          "Quantity": 0
+        },
+        "DefaultCacheBehavior": {
+          "TargetOriginId": "mcopper-demo-3.s3.us-east-1.amazonaws.com",
+          "TrustedSigners": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "TrustedKeyGroups": {
+            "Enabled": false,
+            "Quantity": 0
+          },
+          "ViewerProtocolPolicy": "allow-all",
+          "AllowedMethods": {
+            "Quantity": 2,
+            "Items": ["HEAD", "GET"],
+            "CachedMethods": {
+              "Quantity": 2,
+              "Items": ["HEAD", "GET"]
+            }
+          },
+          "SmoothStreaming": false,
+          "Compress": true,
+          "LambdaFunctionAssociations": {
+            "Quantity": 0
+          },
+          "FunctionAssociations": {
+            "Quantity": 0
+          },
+          "FieldLevelEncryptionId": "",
+          "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6"
+        },
+        "CacheBehaviors": {
+          "Quantity": 0
+        },
+        "CustomErrorResponses": {
+          "Quantity": 0
+        },
+        "Comment": "",
+        "PriceClass": "PriceClass_All",
+        "Enabled": false,
+        "ViewerCertificate": {
+          "CloudFrontDefaultCertificate": true,
+          "SSLSupportMethod": "vip",
+          "MinimumProtocolVersion": "TLSv1",
+          "CertificateSource": "cloudfront"
+        },
+        "Restrictions": {
+          "GeoRestriction": {
+            "RestrictionType": "none",
+            "Quantity": 0
+          }
+        },
+        "WebACLId": "",
+        "HttpVersion": "HTTP2",
+        "IsIPV6Enabled": true,
+        "Staging": true
+      }
+    ]
+  }
+}

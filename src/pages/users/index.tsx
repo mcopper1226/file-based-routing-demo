@@ -1,6 +1,7 @@
 import { useLoaderData, NavLink } from 'react-router-dom';
 import { UserData, userListQuery } from './index.loader';
 import { useQuery } from '@tanstack/react-query';
+import DistributionTable from '../../components/DistributionTable';
 
 const Page = () => {
   // const data = useLoaderData() as UserData[];
