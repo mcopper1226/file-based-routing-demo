@@ -25,4 +25,4 @@ pages:
     paths:
       - public # Required artifact of Gitlab pages
   only:
-    - main
+    - mainline
